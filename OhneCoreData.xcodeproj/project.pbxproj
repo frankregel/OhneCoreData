@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7796450C1920EF1400808BD2 /* TodoEditTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7796450B1920EF1400808BD2 /* TodoEditTableViewController.m */; };
 		77B365CE191CF45F007A29F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77B365CD191CF45F007A29F5 /* Foundation.framework */; };
 		77B365D0191CF45F007A29F5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77B365CF191CF45F007A29F5 /* CoreGraphics.framework */; };
 		77B365D2191CF45F007A29F5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77B365D1191CF45F007A29F5 /* UIKit.framework */; };
@@ -19,6 +20,9 @@
 		77B365E9191CF45F007A29F5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77B365D1191CF45F007A29F5 /* UIKit.framework */; };
 		77B365F1191CF45F007A29F5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 77B365EF191CF45F007A29F5 /* InfoPlist.strings */; };
 		77B365F3191CF45F007A29F5 /* OhneCoreDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B365F2191CF45F007A29F5 /* OhneCoreDataTests.m */; };
+		77B365FD191CF48B007A29F5 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77B365FC191CF48B007A29F5 /* Storyboard.storyboard */; };
+		77B36600191CF58D007A29F5 /* ToDosTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B365FF191CF58D007A29F5 /* ToDosTableViewController.m */; };
+		77B36603191CFD3C007A29F5 /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B36602191CFD3C007A29F5 /* DataModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7796450A1920EF1400808BD2 /* TodoEditTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodoEditTableViewController.h; sourceTree = "<group>"; };
+		7796450B1920EF1400808BD2 /* TodoEditTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodoEditTableViewController.m; sourceTree = "<group>"; };
 		77B365CA191CF45F007A29F5 /* OhneCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OhneCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77B365CD191CF45F007A29F5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		77B365CF191CF45F007A29F5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,6 +54,11 @@
 		77B365EE191CF45F007A29F5 /* OhneCoreDataTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OhneCoreDataTests-Info.plist"; sourceTree = "<group>"; };
 		77B365F0191CF45F007A29F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		77B365F2191CF45F007A29F5 /* OhneCoreDataTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OhneCoreDataTests.m; sourceTree = "<group>"; };
+		77B365FC191CF48B007A29F5 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		77B365FE191CF58D007A29F5 /* ToDosTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDosTableViewController.h; sourceTree = "<group>"; };
+		77B365FF191CF58D007A29F5 /* ToDosTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDosTableViewController.m; sourceTree = "<group>"; };
+		77B36601191CFD3C007A29F5 /* DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModel.h; sourceTree = "<group>"; };
+		77B36602191CFD3C007A29F5 /* DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +120,13 @@
 			children = (
 				77B365DC191CF45F007A29F5 /* AppDelegate.h */,
 				77B365DD191CF45F007A29F5 /* AppDelegate.m */,
+				77B365FC191CF48B007A29F5 /* Storyboard.storyboard */,
+				77B365FE191CF58D007A29F5 /* ToDosTableViewController.h */,
+				77B365FF191CF58D007A29F5 /* ToDosTableViewController.m */,
+				7796450A1920EF1400808BD2 /* TodoEditTableViewController.h */,
+				7796450B1920EF1400808BD2 /* TodoEditTableViewController.m */,
+				77B36601191CFD3C007A29F5 /* DataModel.h */,
+				77B36602191CFD3C007A29F5 /* DataModel.m */,
 				77B365DF191CF45F007A29F5 /* Images.xcassets */,
 				77B365D4191CF45F007A29F5 /* Supporting Files */,
 			);
@@ -221,6 +239,7 @@
 			files = (
 				77B365D8191CF45F007A29F5 /* InfoPlist.strings in Resources */,
 				77B365E0191CF45F007A29F5 /* Images.xcassets in Resources */,
+				77B365FD191CF48B007A29F5 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,7 +259,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				77B365DE191CF45F007A29F5 /* AppDelegate.m in Sources */,
+				77B36603191CFD3C007A29F5 /* DataModel.m in Sources */,
+				77B36600191CF58D007A29F5 /* ToDosTableViewController.m in Sources */,
 				77B365DA191CF45F007A29F5 /* main.m in Sources */,
+				7796450C1920EF1400808BD2 /* TodoEditTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +459,7 @@
 				77B365F8191CF45F007A29F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		77B365F9191CF45F007A29F5 /* Build configuration list for PBXNativeTarget "OhneCoreDataTests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +468,7 @@
 				77B365FB191CF45F007A29F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
