@@ -12,7 +12,9 @@
 + (DataModel *) sharedInstance;
 
 - (NSInteger) numberOfTodos;
-- (NSMutableDictionary *) todoAtIndexPath: (NSIndexPath *) indexPath;
+- (NSMutableDictionary *)todoAtIndexPath: (NSIndexPath *)indexPath;
+- (NSArray *)groups;
+- (NSArray *)todosAtGroup: (NSInteger) group;
 - (void) addTodo: (NSMutableDictionary *) todo;
 - (void) deleteTodo: (NSMutableDictionary *) todo;
 - (void) save;

@@ -48,7 +48,24 @@
 
 - (NSMutableDictionary *) todoAtIndexPath: (NSIndexPath *) indexPath
 {
-    return self.todos[indexPath.row];
+    return [self todosAtGroup:indexPath.section][indexPath.row];
+    
+}
+
+- (NSArray *)groups
+{
+    NSArray *groups = [self.todos valueForKeyPath:@"@distinctUnionOfObjects.group"];
+    return [groups sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
+    
+}
+
+- (NSArray *)todosAtGroup: (NSInteger) group
+{
+    NSString *groupName = self.groups [group];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF.group == %@", groupName];
+    NSSortDescriptor *sortName = [NSSortDescriptor sortDescriptorWithKey:@"name" ascending:YES];
+    NSArray *todos = [self.todos filteredArrayUsingPredicate:predicate];
+    return [todos sortedArrayUsingDescriptors:@[sortName]];
     
 }
 
