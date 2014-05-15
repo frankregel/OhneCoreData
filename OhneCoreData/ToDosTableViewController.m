@@ -68,6 +68,27 @@
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (editingStyle == UITableViewCellEditingStyleDelete)
+    {
+        [self.tableView beginUpdates];
+        NSMutableDictionary *todo = [[DataModel sharedInstance] todoAtIndexPath:indexPath];
+        NSInteger indexOfSection = [[[DataModel sharedInstance]groups]indexOfObject:[todo valueForKey:@"group"]];
+        NSInteger numberOfRows = [self.tableView numberOfRowsInSection:indexOfSection];
+        
+        [[DataModel sharedInstance]deleteTodo:todo];
+        [[DataModel sharedInstance]save];
+        [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+        if (numberOfRows == 1)
+        {
+            [self.tableView deleteSections:[NSIndexSet indexSetWithIndex:indexOfSection] withRowAnimation:UITableViewRowAnimationAutomatic];
+        }
+        [self.tableView endUpdates];
+    }
+}
+
+#pragma mark - Segues
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.identifier isEqualToString:@"edit"])
